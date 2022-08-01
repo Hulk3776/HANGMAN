@@ -21,7 +21,7 @@ while run:
     selected_word = l[index].strip('\n')
     
     # creation of word dashes variables
-    x = 650
+    x = 550
     for i in range(0,len(selected_word)):
         x += 60
         exec('d{}=Label(root,text="_",bg="#E7FFFF",font=("arial",40))'.format(i))
@@ -50,7 +50,7 @@ while run:
         exec('{}=Label(root,bg="#E7FFFF",image={})'.format(p1[0],p1[1]))
 
     # placement of first hangman image
-    c1.place(x = 700,y =- 50)
+    c1.place(x = 650,y =- 50)
     
     # exit buton
     def close():
