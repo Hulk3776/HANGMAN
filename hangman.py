@@ -28,7 +28,7 @@ while run:
 
     
     # creation of word dashes variables
-    x = 550
+    x = 690-(60*(len(selected_word)//2))
     for i in range(0,len(selected_word)):
         x += 60
         exec('d{}=Label(root,text="_",bg="#ffffff",font=("arial",40), padx = 10)'.format(i))
