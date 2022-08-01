@@ -90,7 +90,7 @@ while run:
             exec('c{}.destroy()'.format(count))
             exec('c{}.place(x={},y={})'.format(count+1,700,-50))
             if count == 6:
-                answer = messagebox.askyesno('GAME OVER','YOU LOST! THE WORD WAS'+selected_word+'\n WANT TO PLAY AGAIN?')
+                answer = messagebox.askyesno('GAME OVER','YOU LOST! THE WORD WAS '+selected_word+'\n WANT TO PLAY AGAIN?')
                 if answer == True:
                     run = True
                     score = 0
