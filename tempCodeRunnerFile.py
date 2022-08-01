@@ -1,1 +1,1 @@
-padx= 50
+Player 1'
