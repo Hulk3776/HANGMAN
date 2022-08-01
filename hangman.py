@@ -1,12 +1,10 @@
-import random
+
 from tkinter import *
 from tkinter import messagebox
-from turtle import color
 import getpass
 
 score = 0
 run = True
-
 # main loop
 while run:
     root = Tk()
@@ -18,7 +16,16 @@ while run:
 
     # choosing word
     print("Get ready to play Hangman!")
-    selected_word = getpass.getpass("Player 1, input your word: ").lower()
+    while 1:
+
+        
+        selected_word = getpass.getpass("Player 1, input your word: ").lower()
+        if selected_word.isalpha():
+            break
+        else:
+            print("\n\nThe Entered Word Contains Special Characters, Spaces or Numbers Please enter only Alphabets\n\n")
+            continue
+
     
     # creation of word dashes variables
     x = 550
@@ -61,8 +68,8 @@ while run:
             root.destroy()
             
     e1 = PhotoImage(file = 'exit.png')
-    ex = Button(root,bd = 0,command = close,bg="#191919",activebackground = "#191919",font = 10,image = e1,height = 54,width=126)
-    ex.place(x=1400,y=10)
+    ex = Button(root,bd = 0,command = close,bg="#191919",activebackground = "#191919",font = 10,image = e1,height = 81,width=189)
+    ex.place(x=1350,y=10)
     s2 = 'SCORE:'+str(score)
     s1 = Label(root,text = s2,bg = "#fff",font = ("arial",25))
     s1.place(x = 10,y = 10)
