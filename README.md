@@ -1,4 +1,7 @@
 # HANGMAN-GAME
+
+RUN : HANGMAN.exe
+
 GUI BASED GAME
 Game designed by "python tutorials".
 for more support visit the youtube channel: https://youtu.be/99zOhml1-6s .
